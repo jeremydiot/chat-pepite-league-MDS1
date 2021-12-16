@@ -1,5 +1,8 @@
 export default function Login () {
   return (
-    <h1>HELLO WORLD</h1>
+    <Layout>
+          <h1>CHANNEL</h1>
+    </Layout>
+
   )
 }

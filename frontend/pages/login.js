@@ -1,6 +1,5 @@
 export default function Login () {
   return (
-    <body>
       <div class='modal'>
         <h2>Se Connecter</h2>
         <form class='form'>
@@ -10,6 +9,5 @@ export default function Login () {
         </form>
         <span class='footer'>Vous n'etes pas encore inscrit ? <a href='/signin' class='footer-nav'>S'inscrire</a></span>
       </div>
-    </body>
   )
 }
