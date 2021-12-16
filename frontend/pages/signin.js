@@ -2,7 +2,7 @@
   export default function SignIn() {
   return (
     <div style={{height:"100%",width:"100%",justifyContent:"center", alignItems:"center"}}>
-      <div>
+      <div style={{height: "fit-content",width:"fit-content", margin:"auto", padding: "3rem",backgroundColor: "white",marginTop:"6rem", borderRadius:"0.5rem",border:"solid 0.1rem"}}>
         <form class="container">
           <h2>S'inscrire</h2>
           <input type="text" placeholder="LastName" />
