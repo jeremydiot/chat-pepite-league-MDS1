@@ -3,14 +3,9 @@ body {
 }
 
 .modal{
-  position: absolute;
-  top:244px;
-  left: 470px;
-  width: 424px;
-  height: 311px;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
   align-items: center;
   background: #FFFFFF;
   border: 1.5px solid #D5E3EC;
@@ -26,7 +21,7 @@ body {
 .form-input{
   padding: 0 15px;
   margin-bottom: 1rem;
-  width:392px;
+  width:392px!important;
   height: 40px;
   
   background: #EEEEEE;

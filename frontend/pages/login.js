@@ -23,18 +23,17 @@ export default function Login () {
   }
   return (
 
-    <div style={{height:"100%",width:"100%",justifyContent:"center", alignItems:"center"}}>
-      <div style={{height: "fit-content",width:"fit-content", margin:"auto", padding: "3rem",backgroundColor: "white",marginTop:"6rem", borderRadius:"0.5rem",border:"solid 0.1rem"}}>
+    <div className='modal'>
+      <div style={{ height: 'fit-content', width: 'fit-content', margin: 'auto', padding: '3rem', backgroundColor: 'white', marginTop: '6rem', borderRadius: '0.5rem', border: 'solid 0.1rem' }}>
         <h2>Se Connecter</h2>
         <form class='form'>
           <input type='text' placeholder='Email' class='form-input' onChange={mail => setMail(mail)} />
           <input type='password' placeholder='Password' class='form-input' onChange={password => setPassword(password)} />
           <button type='submit' class='form-btn' onClick={handleSubmit}>Se Connecter</button>
         </form>
-        <span class='footer'>Vous n'etes pas encore inscrit ? <a href='/signin' class='footer-nav'>S'inscrire</a></span>
+        <span class='footer'>Vous n'êtes pas encore inscrit ? <a href='/signin' class='footer-nav'>S'inscrire</a></span>
       </div>
     </div>
-    
 
   )
 }
