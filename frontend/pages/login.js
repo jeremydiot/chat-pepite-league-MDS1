@@ -1,22 +1,22 @@
 
 import { useState } from 'react'
+import axios from 'axios'
 
 export default function Login () {
   const [mail, setMail] = useState('')
   const [password, setPassword] = useState('')
 
   const handleSubmit = async () => {
-    try {
-      const response = await fetch('http://localhost:1337/auth/local', {
-        method: 'POST',
-        body: {
-          identifier: mail,
-          password: password
-        }
-      })
+    const user = {
+      identifier: mail,
+      password: password
+    }
 
-      const data = await response.json()
-      console.log(data)
+ 
+    try {
+      const response = await axios.post("http://localhost:1337/auth/local", user)
+      const jwt = response.data.jwt
+      localStorage.setItem("user_token", jwt)
     } catch (error) {
       console.error(error)
     }
@@ -33,7 +33,9 @@ export default function Login () {
         </form>
         <span class='footer'>Vous n'êtes pas encore inscrit ? <a href='/signin' class='footer-nav'>S'inscrire</a></span>
       </div>
+
     </div>
+
 
   )
 }
