@@ -1,13 +1,15 @@
 export default function Login () {
   return (
-    <div class='d-flex flex-column container'>
-      <h2>Se Connecter</h2>
-      <form class='d-flex flex-column'>
-        <input type='text' placeholder='Email' />
-        <input type='password' placeholder='password' />
-        <button type='submit'>Se Connecter</button>
-      </form>
-      <span>Vous n'etes pas encore inscrit ? <a href='/subscription'>S'inscrire</a></span>
-    </div>
+    <body>
+      <div class='modal'>
+        <h2>Se Connecter</h2>
+        <form class='form'>
+          <input type='text' placeholder='Email' class='form-input' />
+          <input type='password' placeholder='Password' class='form-input' />
+          <button type='submit' class='form-btn'>Se Connecter</button>
+        </form>
+        <span class='footer'>Vous n'etes pas encore inscrit ? <a href='/signin' class='footer-nav'>S'inscrire</a></span>
+      </div>
+    </body>
   )
 }
