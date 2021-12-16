@@ -1,12 +1,17 @@
-export default function SignIn () {
+export default function SignIn() {
   return (
-    <div class='d-flex flex-column'>
-      <h2>S'inscrire</h2>
-      <form class='d-flex flex-column'>
-        <input type='text' placeholder='Email' />
-        <input type='password' placeholder='password' />
-        <button type='submit'>S'inscrire'</button>
+    <div>
+      <form class="container">
+        <h2>S'inscrire</h2>
+        <input type="text" placeholder="LastName" />
+        <input type="text" placeholder="FirstName" />
+        <input type="Email" placeholder="Email" />
+        <input type="password" placeholder="password" />
+        <button type="submit" class="btn-form">
+          S'inscrire
+        </button>
+      <span class="logout-btn">Vous n'etes pas encore connecté ? <a href='/login'>Se connecter</a></span>
       </form>
     </div>
-  )
+  );
 }
