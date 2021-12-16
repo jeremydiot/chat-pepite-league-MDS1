@@ -1,7 +1,10 @@
-# chat-pepite-league-MDS1
+# pepitchat
 
-npx create-next-app --example with-tailwindcss
+Pepite League - My digital school Groupe 1
 
-yarn dev
-
-https://practicalprogramming.fr/debuter-avec-next-js
+## Equipe
+- Jérémy Diot
+- Nathan Gonzalez
+- Axel Gonon
+- Jerome Georges
+- Arthur Marionneau
