@@ -1,6 +1,6 @@
 export default function Login () {
   return (
-    <div class='d-flex flex-column'>
+    <div class='d-flex flex-column container'>
       <h2>Se Connecter</h2>
       <form class='d-flex flex-column'>
         <input type='text' placeholder='Email' />
