@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "channels",
+  "info": {
+    "name": "channel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "users": {
+      "via": "channels",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    },
+    "messages": {
+      "via": "channel",
+      "collection": "message"
+    }
+  }
+}
