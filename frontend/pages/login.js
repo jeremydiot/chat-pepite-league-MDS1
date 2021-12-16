@@ -22,8 +22,11 @@ export default function Login () {
     }
   }
   return (
-    
-      <div className='modal'>
+
+
+    <div style={{height:"100%",width:"100%",justifyContent:"center", alignItems:"center"}}>
+      <div style={{height: "fit-content",width:"fit-content", margin:"auto", padding: "3rem",backgroundColor: "white",marginTop:"6rem", borderRadius:"0.5rem",border:"solid 0.1rem"}}>
+
         <h2>Se Connecter</h2>
         <div className='form'>
           <input type='text' placeholder='Email' className='form-input' onChange={(mail) => {setMail(mail.target.value)}} />
@@ -33,6 +36,10 @@ export default function Login () {
         <span className='footer'>Vous n'etes pas encore inscrit ? 
           <a href='/signin' className='footer-nav'>S'inscrire</a></span>
       </div>
+
+    </div>
     
+
+
   )
 }
