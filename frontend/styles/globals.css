@@ -15,7 +15,7 @@ div#__next, layout, body, html{
 
 sidebar{
   background-color: white;
-  width: 15rem;
+  width: 30rem;
 }
 
 navbar{
@@ -31,4 +31,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+sidebar{
+  border-right: solid 0.2rem;
+}
+
+navbar{
+  border-bottom: solid 0.2rem;
+}
+
+sidebar,navbar{
+  border-color: #C8C8C8 ;
 }
